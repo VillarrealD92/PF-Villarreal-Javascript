@@ -1,0 +1,19 @@
+article{
+    div{
+        h3{
+            @include textos ($mainFont,1.8em,$mainColor,normal,underline)
+        }
+        
+        ul{
+            li{
+                @include textos ($secondaryFont,1em,$mainColor,normal,none);
+                
+                .format{
+                    @include textos ($secondaryFont,1em,red,italic,underline);
+                }
+
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+
+//logo
+
+.logoprincipal{
+    @include iconos (100px,100px)
+}
+
+//iconosredes
+
+.iconoredes{
+    @include iconos (50px,50px)
+}
+
+//nav
+
+nav{
+    
+    
+    .signin{
+        @include iconos(80px,80px);
+        text-decoration: none;
+        color: $secondaryColor;
+        font-family: $mainFont;  
+
+    }
+
+    .listanav{
+        color: $secondaryColor;
+        font-family: $secondaryFont;
+    }
+}
+
+//titulo
+
+.titulo{
+    h1{
+        @include textos ($mainFont,3em,$mainColor,normal,none)  
+     }
+}
+
+
+//main
+
+
+main{
+    background-image: url(../multimedia/imagenes/bg/bgmain.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+}
+
+//pages
+
+.titulo{
+    font-family: $mainFont;
+}
+
+.destacadosLine{
+    border-style: dotted;
+    
+}
+
+//footer
+
+footer{
+    .nosotros{
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        color: $secondaryColor;
+        font-size: 0.8rem;
+    }
+}
+
+.pie{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+}
+
+//error
+
+

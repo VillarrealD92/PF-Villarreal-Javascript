@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guarderias en MundoCan</title>
+    <meta name="description" content="Las mejores guarderias rankeadas por sus usuarios, ¡encuentra la tuya!">
+    <meta name="author" content="Diego Villarreal">
+    <meta name="keywords" content="perros, adiestramiento, guarderias, traslados caninos, veterinarias, paseadores">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../multimedia/favicon/icons8-perro-30.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    
+  </head>
+<body>
+    <div class="bg-ligth py-2"></div>
+
+    <!-- header -->
+    <header class="bg-dark text-white d-flex justify-content-around">
+
+        <!-- logo header -->
+        <div class="mx-3 my-2 logoprincipal">
+            <a href="../index.html">
+                <img src="../multimedia/imagenes/logo.svg" alt="logo MundoCan">
+            </a>
+        </div>
+
+        <!-- titulo -->
+        <div class="text-center align-self-center justify-content-center">
+            <h2>MundoCan</h2>
+        </div>
+
+        <!-- logo header -->
+        <div class="mx-3 my-2 logoprincipal">
+            <a href="../index.html">
+                <img src="../multimedia/imagenes/logo.svg" alt="logo MundoCan">
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-secondary rounded mx-3">
+          <button class="btn mx-3 my-3 signin signinButton">
+            <img src="../multimedia/imagenes/huellasignin.svg" alt="sign_in" class="mr-2">
+            Sign-in
+          </button>
+          <div id="formContainer"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link listanav" href="../pages/adiestradores.html">Adiestradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link listanav" href="../pages/paseos.html">Paseos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link listanav" href="../pages/traslados.html">Traslados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link listanav" href="../pages/veterinarias.html">Veterinarias</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- titulo -->
+
+    <div class="titulo text-center my-4">
+
+      <h1>Guarderías</h1>
+
+    </div>
+      <!-- main  -->
+    <main class="mx-2 mainpages">
+
+      <!-- destacados -->
+      <div class="container-fluid destacadosLine destacadosAdiestramiento py-3 ">
+        <div>
+          <p class="text-center fw-bold">Destacados</p>
+        </div>
+        <div class="row justify-content-center">
+
+          <!-- Contenedor para las tarjetas de destacados -->
+          <div class="destacadosContainer row justify-content-center"></div>
+        </div>
+      </div>
+
+    
+
+
+      <!-- Contenedor para todas las tarjetas de adiestradores -->
+      <div id="guarderiaContainer" class="row d-flex justify-content-center">
+
+      </div>
+
+      <!-- tarjeta para agregar nuevo servicio -->
+
+      <div class="d-flex justify-content-center">
+        <article class="col-sm-12 col-md-8 col-lg-3 my-3 ">
+          <div class="card">
+              <img src="../multimedia/imagenes/individual/disponible.webp" class="card-img-top" alt="espacio_disponible">
+              <div class="card-body">
+                <div class="text-center">
+                  <h3 class="card-title">Disponible</h3>
+                  <p class="card-text">¡Publicitate!</p>
+                  <div class="reserva-container">
+                    <button class="reservar btn btn-primary" data-categoria="guarderia">Reservar </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Contenedor para todas las tarjetas de nuevos adiestradores -->
+      <div id="newGuarderiaContainer" class="row d-flex justify-content-center">
+
+      </div>
+
+        
+
+    </main>
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pie" >
+
+        <!-- redes -->
+        <div class="d-flex mx-3 my-2">
+            <div class="iconsFoot align-self-center">
+                <a class="text-decoration-none" href="https://www.facebook.com" target="_blank">
+                    <img class="iconoredes" src="../multimedia/icons/facebook.svg" alt="icon_facebook" >
+                </a>
+    
+                <a  class="text-decoration-none" href="https://www.instagram.com" target="_blank">
+                    <img class="iconoredes" src="../multimedia/icons/instagram.svg" alt="icon_instagram" >
+                </a>
+    
+                <a class="text-decoration-none" href="https://www.twitter.com" target="_blank">
+                    <img class="iconoredes" src="../multimedia/icons/twitter.svg" alt="icon_twitter">
+                </a>
+
+                <a class="text-decoration-none" href="https://www.linkedin.com/" target="_blank">
+                    <img class="iconoredes" src="../multimedia/icons/linkedin.svg" alt="icon_twitter">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- vinculos -->
+        <div>
+          <a class="nosotros" href="http://www.homerswebpage.com/" target="_blank" rel="nofollow">Terminos y condiciones</a>
+          <a class="nosotros" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
+          <a class="nosotros" href="https://www.freepik.es/" target="_blank">creditos imagenes freepik</a>
+          <a class="nosotros" href="https://unsplash.com/es" target="_blank">creditos imagenes unsplash </a>
+        </div>
+        
+
+        <!-- logo footer -->
+        <div class="mx-3 my-2 logoprincipal">
+            <a href="../index.html">
+                <img src="../multimedia/imagenes/logo.svg" alt="logo MundoCan" >
+            </a>
+        </div>
+        
+        
+    </footer>
+    <div class="bg-ligth py-2"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script src="../js/signin.js"></script>
+<script src="../js/tarjetas-pre.js"></script>
+<script src="../js/disponible.js"></script>
+<script src="../js/tarjetas-new.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+// index
+@media (max-width:992px){
+
+    main{
+        background: none;
+    }
+    .boxmain{
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+
+            h3{
+            @include textos ($mainFont,2em,$mainColor,normal,none)
+            }
+
+            p{
+               
+                font-family: 'Raleway', sans-serif;
+           
+            }
+            
+            a{
+                font-family: 'Raleway', sans-serif;
+                color: black;
+                    
+            }
+            
+    }
+        
+        
+        
+        
+    .boxizq{
+        justify-content: center;
+        width: 80%;
+        
+        
+    }
+        
+            
+        
+    .boxder{
+        justify-content: center;
+        width: 80%;
+        
+    }
+    
+    .boxprin{
+        width: 90%;
+        background-image: none;
+    }
+        
+    .adiestradores{
+        @extend .boxprin;
+        background-color: #ecccb2;
+        
+            
+    }
+        
+    .guarderias{
+        @extend .boxprin;
+        background-color: #b68604;    
+    }
+    .paseos{
+        @extend .boxprin;
+        background-color: #95e7c1;    
+    }
+    .traslados{
+        @extend .boxprin;
+        background-color: #95e7c1;
+            
+    }
+    .veterinarias{
+        @extend .boxprin;
+        background-color: #6bbaee;
+        
+        h3{
+            @include textos ($mainFont,2em,$mainColor,normal,underline);
+            margin-bottom: 50px;
+            
+        }
+    
+        p{
+            @include textos ($secondaryFont,1em,$mainColor,italic,none)
+        }
+        
+    
+        a{
+            color: $mainColor;
+          }
+    }
+        
+    
+   
+}
+// footer
+
+@media (max-width:600px){
+    .pie{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        width:100%;
+
+        .nosotros{
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            color: white;
+            font-size: 0.8rem;
+        }
+    }   
+}

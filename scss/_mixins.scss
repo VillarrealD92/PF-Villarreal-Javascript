@@ -1,0 +1,18 @@
+
+
+
+
+
+@mixin iconos ($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin textos ($font,$size,$color,$style,$decor){
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    font-style: $style;
+    text-decoration: $decor;
+}
+

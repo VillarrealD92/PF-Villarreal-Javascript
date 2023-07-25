@@ -1,0 +1,96 @@
+.boxmain{
+    background-size:cover;
+    opacity: 0.9;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    
+
+    h3{
+        @include textos ($mainFont,2em,$mainColor,normal,underline);
+        margin-bottom: 50px;
+        
+    }
+
+    p{
+        @include textos ($secondaryFont,1em,$mainColor,italic,none)
+    }
+
+    a{
+        color: $mainColor;
+        font-family: $secondaryFont;
+        &:hover{
+            color: $hoverColor;
+        }
+    }
+}
+
+.boxizq{
+    justify-content: flex-end;
+    width: 40%;
+    margin-right: 50px;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.15);
+}
+
+.boxder{
+    justify-content: flex-start;
+    width: 40%;
+    margin-left: 50px;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.15);
+}
+
+.boxprin{
+    width: 1500px ;
+    height: 500px;
+}
+
+.adiestradores{
+    @extend .boxprin;
+    background-image: url("../multimedia/imagenes/bg/bg1.jpg");
+    
+}
+
+.guarderias{
+    @extend .boxprin;
+    background-image: url("../multimedia/imagenes/bg/bg3.jpg");
+    
+       
+}
+
+.paseos{
+    @extend .boxprin;
+    background-image: url("../multimedia/imagenes/bg/bg2.jpg");
+    
+    
+}
+.traslados{
+    @extend .boxprin;
+    background-image: url("../multimedia/imagenes/bg/bg6.jpg");
+    
+    
+    
+}
+.veterinarias{
+    @extend .boxprin;
+    color: $secondaryColor;
+    background-image: url("../multimedia/imagenes/bg/bg5.jpg");
+
+    h3{
+        @include textos ($mainFont,2em,$secondaryColor,normal,underline);
+        margin-bottom: 50px;
+        
+    }
+
+    p{
+        @include textos ($secondaryFont,1em,$secondaryColor,italic,none)
+    }
+    
+
+    a{
+        color: $secondaryColor;
+      }
+    
+}
