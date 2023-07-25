@@ -23,7 +23,7 @@ $(document).ready(function() {
   function mostrarBienvenida(username) {
     formContainer.hide()
     const welcomeText = 'Bienvenido, ' + username
-    $('.signinButton').html(welcomeText).show()
+    $('.signinButton').html('<img src="../multimedia/imagenes/huellasignin.svg" alt="sign_in" class="mr-2">' + welcomeText).show()
     const logoutContainer = $('<div class="d-flex justify-content-center mt-2"></div>')
     logoutContainer.append(logoutButton)
     $('.navbar').after(logoutContainer)
