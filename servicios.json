@@ -442,17 +442,9 @@
         "imagen": "../multimedia/imagenes/individual/traslados/traslado6.webp" ,
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
-    },
-    
-    { 
-        "id": "10.1", 
-        "categoria": "disponible", 
-        "nombre": "Publicitate", 
-        "formato": "", 
-        "rating": "", 
-        "precio": "",
-        "imagen": "../multimedia/imagenes/individual/disponible.webp" 
     }
+    
+    
           
   ]
 

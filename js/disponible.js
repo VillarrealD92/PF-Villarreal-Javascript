@@ -73,11 +73,14 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
         // Crear el nuevo servicio
         const nuevoServicio = {
           id: generateUniqueID(),
+          categoria: categoria,
           nombre: nombre,
           formato: formato,
+          rating: '1',
+          precio: "2000",
           imagen: imagen,
-          categoria: categoria,
-          rating: '0'
+          telefono: "+54 9 11 2345 7890",
+          email: "emailinventado@adiestramiento.com"
         }
 
         // Agregar el nuevo servicio al array de servicios guardados

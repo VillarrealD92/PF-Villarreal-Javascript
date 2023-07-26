@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
-  
+
 
 
 </head>
@@ -102,8 +102,24 @@
       </div>
 
 
+      <div class="d-flex justify-content-center my-5 w-100">
+        <div>
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary order-btn" data-sort="rating">Rating</button>
+                <button type="button" class="btn btn-secondary order-btn" data-sort="precio">Precio</button>
     
-
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Orden
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item sort-btn" href="#" data-order="desc">Mayor</a></li>
+                        <li><a class="dropdown-item sort-btn" href="#" data-order="asc">Menor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
 
       <!-- Contenedor para todas las tarjetas de adiestradores -->
       <div id="adiestradoresContainer" class="row d-flex justify-content-center">
@@ -133,11 +149,7 @@
       </div>
 
 
-      <!-- Contenedor para todas las tarjetas de adiestradores -->
 
-      <div id="newAdiestradoresContainer" class="row d-flex justify-content-center">
-
-      </div>
 
 
     </main>
@@ -170,7 +182,7 @@
           </a>
         </div>
       </div>
-      
+
       <!-- vinculos -->
       <div>
         <a class="nosotros" href="http://www.homerswebpage.com/" target="_blank" rel="nofollow">Terminos y
@@ -201,9 +213,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <script src="../js/signin.js"></script>
-    <script src="../js/tarjetas-pre.js"></script>
+    <script src="../js/tarjetas.js"></script>
     <script src="../js/disponible.js"></script>
-    <script src="../js/tarjetas-new.js"></script>
+
 </body>
 
 </html>
