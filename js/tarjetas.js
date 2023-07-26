@@ -33,12 +33,14 @@ $(document).ready(function () {
             mostrarTarjetasDestacadas(serviciosTotales, 'traslados', '.destacadosTraslados .row')
             mostrarTarjetasDestacadas(serviciosTotales, 'veterinarias', '.destacadosVeterinarias .row')
         })
+        
         .catch(function (error) {
             toastr.error('Error al cargar el archivo JSON')
         })
         
     
-
+    
+        
     // Función para cargar y mostrar los servicios en base a la categoría
     function cargarYMostrarServicios(servicios, categoria, container) {
         // Filtrar los servicios por categoría
