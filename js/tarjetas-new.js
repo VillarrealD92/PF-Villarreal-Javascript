@@ -35,6 +35,12 @@ $(document).ready(function() {
 
     // Generar las tarjetas de servicios filtrados y agregarlas al contenedor
     serviciosFiltrados.forEach(servicio => {
+      // Crear una nueva row cada 3 tarjetas
+      if (index % 3 === 0) {
+        const row = $('<div class="row justify-content-center mx-4"></div>')
+        container.append(row)
+      }
+
       const card = $(`
         <div class="col-sm-12 col-md-3 my-3">
           <div class="card">
