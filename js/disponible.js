@@ -43,17 +43,19 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
   // Crear los elementos del formulario de reserva
   const nombreInput = $('<input type="text" placeholder="Nombre" name="nombre">')
   const formatoInput = $('<input type="text" placeholder="Formato" name="formato">')
+  const precioInput = $('<input type="text" placeholder="Precio por hora" name="formato">')
   const submitButton = $('<button class="btn btn-primary">Reservar</button>')
-
+  
   // Obtener el contenedor del formulario de reserva
   const formularioReserva = $('<div class="formularioReserva"></div>')
-  formularioReserva.append(nombreInput, formatoInput, submitButton)
+  formularioReserva.append(nombreInput, formatoInput, precioInput, submitButton)
 
   // Agregar evento de clic al botón de reservar (dentro del formulario)
   submitButton.on('click', function(event) {
     event.preventDefault()
     const nombre = nombreInput.val()
     const formato = formatoInput.val()
+    const precio = precioInput.val()
 
     // Verificar que los campos no estén vacíos antes de proceder
     if (nombre.trim() === '' || formato.trim() === '') {
@@ -77,9 +79,9 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
           nombre: nombre,
           formato: formato,
           rating: '1',
-          precio: "2000",
+          precio: precio,
           imagen: imagen,
-          telefono: "+54 9 11 2345 7890",
+          telefono: "+54 9 11 1234 5678",
           email: "emailinventado@adiestramiento.com"
         }
 
@@ -130,6 +132,74 @@ submitButton.on('click', function(event) {
   reservaContainer.append(formularioReserva)
 }
 
+// Agregar evento de clic al botón de eliminar
+$('.eliminar').on('click', function () {
+
+  if (!localStorage.getItem('loggedInUser')) {
+    Swal.fire({
+      icon: 'info',
+      title: 'Inicia sesión para eliminar',
+      text: 'Debes iniciar sesión para eliminar un servicio.',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Aceptar'
+    })
+    return
+  }
+
+  const categoria = $(this).data('categoria')
+  const serviciosAEliminar = obtenerServiciosPorCategoria(categoria)
+
+  if (serviciosAEliminar.length === 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'No hay servicios para eliminar',
+      text: 'No existen servicios con la categoría seleccionada para eliminar.',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Aceptar'
+    })
+    return
+  }
+
+  Swal.fire({
+    icon: 'question',
+    title: '¿Quieres eliminar estos servicios?',
+    html: `Se eliminarán los siguientes servicios:<ul>${obtenerListaServiciosHTML(serviciosAEliminar)}</ul>¿Deseas continuar?`,
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Eliminar',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      eliminarServiciosPorCategoria(categoria)
+    }
+  })
+})
+function obtenerServiciosPorCategoria(categoria) {
+  return nuevosServicios.filter(servicio => servicio.categoria === categoria)
+}
+
+function obtenerListaServiciosHTML(servicios) {
+  let listaHTML = ''
+  servicios.forEach(servicio => {
+    listaHTML += `<li>${servicio.nombre}</li>`
+  })
+  return listaHTML
+}
+
+function eliminarServiciosPorCategoria(categoria) {
+  nuevosServicios = nuevosServicios.filter(servicio => servicio.categoria !== categoria)
+  localStorage.setItem('nuevosServicios', JSON.stringify(nuevosServicios))
+  Swal.fire({
+    icon: 'success',
+    title: 'Servicios eliminados',
+    text: 'Los servicios han sido eliminados de la lista.',
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'Aceptar'
+  }).then(() => {
+    location.reload()
+  })
+}
 // Función para obtener la imagen según la categoría
 function obtenerImagenSegunCategoria(categoria) {
   // Cargar el archivo servicios.json localmente mediante fetch
