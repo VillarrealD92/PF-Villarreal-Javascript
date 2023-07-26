@@ -30,7 +30,7 @@ $(document).ready(function () {
         serviciosFiltrados.forEach((servicio, index) => {
           // Crear una nueva row cada 3 tarjetas
           if (index % 3 === 0) {
-            const row = $('<div class="row justify-content-center"></div>')
+            const row = $('<div class="row justify-content-center mx-4"></div>')
             container.append(row)
           }
 
