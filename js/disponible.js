@@ -80,7 +80,7 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
           formato: formato,
           rating: '1',
           precio: precio,
-          imagen: imagen,
+          imagen: "../multimedia/imagenes/individual/nuevos/nuevo2.webp",
           telefono: "+54 9 11 1234 5678",
           email: "emailinventado@adiestramiento.com"
         }
