@@ -40,7 +40,7 @@ $(document).ready(function () {
     // Generar las tarjetas de servicios filtrados y agregarlas al contenedor
     serviciosFiltrados.forEach(servicio => {
       const card = $(`
-      <div class="col-sm-12 col-md-4 col-lg-4 my-3">
+      <div class="col-sm-12 col-md-8 col-lg-3 my-2">
         <div class="card">
           <img src="../multimedia/imagenes/individual/nuevos/nuevo2.webp" alt="${servicio.nombre}" class="card-img-top">
           <div class="card-body">
