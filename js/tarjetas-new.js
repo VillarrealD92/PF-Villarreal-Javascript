@@ -26,42 +26,37 @@ $(document).ready(function() {
   cargarYMostrarNuevosServicios('veterinarias', nuevosVeterinariasContainer)
 
   // Función para cargar y mostrar los nuevos servicios en base a la categoría
-  function cargarYMostrarNuevosServicios(categoria, container) {
-    // Filtrar los servicios por categoría
-    const serviciosFiltrados = nuevosServicios.filter(servicio => servicio.categoria === categoria)
+function cargarYMostrarNuevosServicios(categoria, container) {
+  // Filtrar los servicios por categoría
+  const serviciosFiltrados = nuevosServicios.filter(servicio => servicio.categoria === categoria)
 
-    // Limpiar el contenedor antes de agregar las tarjetas
-    container.empty()
+  // Limpiar el contenedor antes de agregar las tarjetas
+  container.empty()
 
-    // Generar las tarjetas de servicios filtrados y agregarlas al contenedor
-    serviciosFiltrados.forEach(servicio => {
-      // Crear una nueva row cada 3 tarjetas
-      if (index % 3 === 0) {
-        const row = $('<div class="row justify-content-center mx-4"></div>')
-        container.append(row)
-      }
+  // Crear una nueva fila para las tarjetas
+  let currentRow = $('<div class="row justify-content-center"></div>')
+  container.append(currentRow)
 
-      const card = $(`
-        <div class="col-sm-12 col-md-3 my-3">
-          <div class="card">
-            <img src="../multimedia/imagenes/individual/nuevos/nuevo2.webp" alt="${servicio.nombre}" class="card-img-top">
-            <div class="card-body">
-              <div class="text-center">
-                <h3 class="card-title">${servicio.nombre}</h3>
-                <p>${servicio.formato}</p>
-                <button type="button" class="btn btn-danger btn-borrar-tarjeta">Borrar Tarjeta</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `)
+  // Generar las tarjetas de servicios filtrados y agregarlas al contenedor
+  serviciosFiltrados.forEach(servicio => {
+    const card = $(`
+      <div class="col-sm-12 col-md-4 col-lg-4 my-3">
+        <!-- Contenido de la tarjeta -->
+      </div>
+    `)
 
-      // Agregar una clase única a la tarjeta basada en su nombre
-      card.addClass('tarjeta-' + servicio.nombre.toLowerCase().replace(/\s/g, '-'))
+    // Agregar una clase única a la tarjeta basada en su nombre
+    card.addClass('tarjeta-' + servicio.nombre.toLowerCase().replace(/\s/g, '-'))
 
-      // Agregar la tarjeta al contenedor
-      container.append(card)
-    })
+    // Agregar la tarjeta a la fila actual
+    currentRow.append(card)
+
+    // Crear una nueva fila después de cada 3 tarjetas
+    if (currentRow.children().length === 3) {
+      currentRow = $('<div class="row justify-content-center"></div>')
+      container.append(currentRow)
+    }
+  })
 
     // Agregar evento de clic a los botones de borrar tarjeta
     container.on('click', '.btn-borrar-tarjeta', function() {
