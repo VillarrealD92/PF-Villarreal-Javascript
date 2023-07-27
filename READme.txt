@@ -6,7 +6,8 @@ guarderías y demás servicios que pueda llegar a necesitar un dueño de estos m
 
 Actualmente soy adiestrador y dueño de 3 perros así que se lo difícil que puede llegar a ser encontrar ciertos servicios de confianza. 
 
-En este proyecto se utilice 2 archivos JSON locales, para los servicios predeterminados y otro para los 2 usuarios con contraseñas (simulando recibir esa información de una o varias APIs propias)
+En este proyecto se utilice 2 archivos JSON locales, para los servicios predeterminados y otro para los 2 usuarios con contraseñas (simulando recibir esa información de una o varias APIs propias
+pero asuminedo las desventajas que eso me trae)
 
 
 También utilice librerías como jQuery para facilitar el manejo del DOM, así como sweetAlert y Toastr para darle animaciones a las alertas dadas al usuario.
@@ -14,7 +15,7 @@ También utilice librerías como jQuery para facilitar el manejo del DOM, así c
 
 Se que el diseño de mobile del index es muy feo, digamos que utilice mi única neurona de diseño en el desktop, lo trate mejorar un poco pero aun así se que es feito.
 
-Todas las paginas tienen un pequeño easter-egg de un chiste recurrente de la clase, espero que lo encuentres!!! (la vena gamer siempre presente)
+Todas las paginas tienen un pequeño easter-egg, espero que lo encuentres!!! (la vena gamer siempre presente)
 
 
 
