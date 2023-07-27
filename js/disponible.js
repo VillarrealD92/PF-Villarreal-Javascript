@@ -1,42 +1,42 @@
 // Agregar evento de clic al botón de reservar
 let nuevosServicios = obtenerServiciosGuardados()
 
-$('.reservar').on('click', function() {
-    if (localStorage.getItem('loggedInUser')) {
-      const categoria = $(this).data('categoria')
-      const reservaContainer = $(this).parent()
-      
-      // Utilizar SweetAlert para pedir confirmación antes de reservar
-      Swal.fire({
-        icon: 'question',
-        title: '¿Quieres reservar este servicio?',
-        text: 'Se realizará una reserva para este servicio. ¿Deseas continuar?',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Reservar',
-        cancelButtonText: 'Cancelar'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          mostrarFormularioReserva(categoria, reservaContainer)
-        }
-      })
-    } else {
-      // Utilizar SweetAlert para alertar al usuario sobre iniciar sesión
-      Swal.fire({
-        icon: 'info',
-        title: 'Inicia sesión para reservar',
-        text: 'Debes iniciar sesión para realizar una reserva.',
-        confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Aceptar'
-      })
-    }
-  })
+$('.reservar').on('click', function () {
+  if (localStorage.getItem('loggedInUser')) {
+    const categoria = $(this).data('categoria')
+    const reservaContainer = $(this).parent()
+
+    // Utilizar SweetAlert para pedir confirmación antes de reservar
+    Swal.fire({
+      icon: 'question',
+      title: '¿Quieres reservar este servicio?',
+      text: 'Se realizará una reserva para este servicio. ¿Deseas continuar?',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Reservar',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        mostrarFormularioReserva(categoria, reservaContainer)
+      }
+    })
+  } else {
+    // Utilizar SweetAlert para alertar al usuario sobre iniciar sesión
+    Swal.fire({
+      icon: 'info',
+      title: 'Inicia sesión para reservar',
+      text: 'Debes iniciar sesión para realizar una reserva.',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Aceptar'
+    })
+  }
+})
 
 function obtenerServiciosGuardados() {
-    const serviciosGuardados = localStorage.getItem('nuevosServicios')
-    return serviciosGuardados ? JSON.parse(serviciosGuardados) : []
-  }
+  const serviciosGuardados = localStorage.getItem('nuevosServicios')
+  return serviciosGuardados ? JSON.parse(serviciosGuardados) : []
+}
 
 // Función para mostrar el formulario de reserva
 function mostrarFormularioReserva(categoria, reservaContainer) {
@@ -45,13 +45,13 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
   const formatoInput = $('<input type="text" placeholder="Formato" name="formato">')
   const precioInput = $('<input type="text" placeholder="Precio por hora" name="formato">')
   const submitButton = $('<button class="btn btn-primary">Reservar</button>')
-  
+
   // Obtener el contenedor del formulario de reserva
   const formularioReserva = $('<div class="formularioReserva"></div>')
   formularioReserva.append(nombreInput, formatoInput, precioInput, submitButton)
 
   // Agregar evento de clic al botón de reservar (dentro del formulario)
-  submitButton.on('click', function(event) {
+  submitButton.on('click', function (event) {
     event.preventDefault()
     const nombre = nombreInput.val()
     const formato = formatoInput.val()
@@ -59,76 +59,62 @@ function mostrarFormularioReserva(categoria, reservaContainer) {
 
     // Verificar que los campos no estén vacíos antes de proceder
     if (nombre.trim() === '' || formato.trim() === '') {
-        Swal.fire({
-          icon: 'error',
-          title: 'Campos vacíos',
-          text: 'Por favor, completa todos los campos antes de reservar.',
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'Aceptar'
-        })
-        return // Detener la ejecución si hay campos vacíos
-      }
-
-    // Obtener la imagen 
-    obtenerImagenSegunCategoria(categoria)
-      .then(imagen => {
-        // Crear el nuevo servicio
-        const nuevoServicio = {
-          id: generateUniqueID(),
-          categoria: categoria,
-          nombre: nombre,
-          formato: formato,
-          rating: '1',
-          precio: precio,
-          imagen: "../multimedia/imagenes/individual/nuevos/nuevo2.webp",
-          telefono: "+54 9 11 1234 5678",
-          email: "emailinventado@adiestramiento.com"
-        }
-
-        // Agregar el nuevo servicio al array de servicios guardados
-        nuevosServicios.push(nuevoServicio)
-
-        // Guardar los servicios en el localstorage
-        localStorage.setItem('nuevosServicios', JSON.stringify(nuevosServicios))
-
-        // Mostrar mensaje de éxito
-        console.log('¡Reserva realizada con éxito!')
-
-        // Limpiar los campos del formulario
-        nombreInput.val('')
-        formatoInput.val('')
-
-        
-        location.reload()
+      Swal.fire({
+        icon: 'error',
+        title: 'Campos vacíos',
+        text: 'Por favor, completa todos los campos antes de reservar.',
+        confirmButtonColor: '#3085d6',
+        confirmButtonText: 'Aceptar'
       })
-      .catch(error => {
-        
-        console.error('Error al obtener la imagen según la categoría', error)
-      })
+      return // Detener la ejecución si hay campos vacíos
+    }
+
+    // Crear el nuevo servicio 
+    const nuevoServicio = {
+      id: generateUniqueID(),
+      categoria: categoria,
+      nombre: nombre,
+      formato: formato,
+      rating: '1',
+      precio: precio,
+      imagen: "../multimedia/imagenes/individual/nuevos/nuevo2.webp",
+      telefono: "+54 9 11 1234 5678",
+      email: "emailinventado@adiestramiento.com"
+    }
+
+    // Agregar el nuevo servicio al array de servicios guardados
+    nuevosServicios.push(nuevoServicio)
+
+    // Guardar los servicios en el localstorage
+    localStorage.setItem('nuevosServicios', JSON.stringify(nuevosServicios))
+
+    // Mostrar mensaje de éxito
+    console.log('¡Reserva realizada con éxito!')
+
+    // Limpiar los campos del formulario
+    nombreInput.val('')
+    formatoInput.val('')
+
+    location.reload()
   })
-  
-// Agregar evento de clic al botón de reservar (dentro del formulario)
-submitButton.on('click', function(event) {
-    
-  })
-  
+
   // Agregar evento keypress a los campos del formulario
-  nombreInput.on('keypress', function(event) {
-    if (event.which === 13) { 
+  nombreInput.on('keypress', function (event) {
+    if (event.which === 13) {
       event.preventDefault()
       submitButton.trigger('click')
     }
   })
-  
-  formatoInput.on('keypress', function(event) {
-    if (event.which === 13) { 
+
+  formatoInput.on('keypress', function (event) {
+    if (event.which === 13) {
       event.preventDefault()
       submitButton.trigger('click')
     }
   })
 
   // Agregar el formulario al contenedor
-  reservaContainer.empty() 
+  reservaContainer.empty()
   reservaContainer.append(formularioReserva)
 }
 

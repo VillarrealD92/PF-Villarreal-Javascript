@@ -1,452 +1,442 @@
 [
-    
-    { 
+    {
         "id": "1.1",
-        "categoria": "adiestramiento", 
-        "nombre": "Daniel Marquez", 
-        "formato": "Domiciliario", 
+        "categoria": "adiestramiento",
+        "nombre": "Daniel Marquez",
+        "formato": "Domiciliario",
         "rating": "5",
-        "precio": "8000", 
+        "precio": "8000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador1.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com" 
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.2", 
-        "categoria": "adiestramiento", 
-        "nombre": "Adriana Espinoza", 
-        "formato": "Deportivo", 
+    {
+        "id": "1.2",
+        "categoria": "adiestramiento",
+        "nombre": "Adriana Espinoza",
+        "formato": "Deportivo",
         "rating": "3",
-        "precio": "6000", 
+        "precio": "6000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador2.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com" 
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.3", 
-        "categoria": "adiestramiento", 
-        "nombre": "Roberto Cajales", 
-        "formato": "Terapia", 
+    {
+        "id": "1.3",
+        "categoria": "adiestramiento",
+        "nombre": "Roberto Cajales",
+        "formato": "Terapia",
         "rating": "3",
-        "precio": "1000", 
+        "precio": "1000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador3.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.4", 
-        "categoria": "adiestramiento", 
-        "nombre": "Miriam Ruiz", 
-        "formato": "Asistencia", 
-        "rating": "5", 
+    {
+        "id": "1.4",
+        "categoria": "adiestramiento",
+        "nombre": "Miriam Ruiz",
+        "formato": "Asistencia",
+        "rating": "5",
         "precio": "6000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador4.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.5", 
-        "categoria": "adiestramiento", 
-        "nombre": "Juan Riquelme", 
-        "formato": "Domiciliario", 
+    {
+        "id": "1.5",
+        "categoria": "adiestramiento",
+        "nombre": "Juan Riquelme",
+        "formato": "Domiciliario",
         "rating": "3",
-        "precio": "5000", 
+        "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador5.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.6", 
-        "categoria": "adiestramiento", 
-        "nombre": "Maria Catillo", 
-        "formato": "Etologia", 
-        "rating": "4", 
+    {
+        "id": "1.6",
+        "categoria": "adiestramiento",
+        "nombre": "Maria Catillo",
+        "formato": "Etologia",
+        "rating": "4",
         "precio": "7000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador6.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.7", 
-        "categoria": "adiestramiento", 
-        "nombre": "Didac Medrano", 
-        "formato": "Etologia", 
-        "rating": "4", 
+    {
+        "id": "1.7",
+        "categoria": "adiestramiento",
+        "nombre": "Didac Medrano",
+        "formato": "Etologia",
+        "rating": "4",
         "precio": "1000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador7.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.8", 
-        "categoria": "adiestramiento", 
-        "nombre": "Santos Prado", 
-        "formato": "Domiciliario", 
-        "rating": "4", 
+    {
+        "id": "1.8",
+        "categoria": "adiestramiento",
+        "nombre": "Santos Prado",
+        "formato": "Domiciliario",
+        "rating": "4",
         "precio": "7000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador8.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com" 
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.9", 
-        "categoria": "adiestramiento", 
-        "nombre": "Naiara Lago", 
-        "formato": "Terapia", 
-        "rating": "2", 
+    {
+        "id": "1.9",
+        "categoria": "adiestramiento",
+        "nombre": "Naiara Lago",
+        "formato": "Terapia",
+        "rating": "2",
         "precio": "1000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador9.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.10", 
-        "categoria": "adiestramiento", 
-        "nombre": "Raúl Barran", 
-        "formato": "Domiciliario", 
-        "rating": "3", 
+    {
+        "id": "1.10",
+        "categoria": "adiestramiento",
+        "nombre": "Raúl Barran",
+        "formato": "Domiciliario",
+        "rating": "3",
         "precio": "9000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador10.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.11", 
-        "categoria": "adiestramiento", 
-        "nombre": "Desire Mayo", 
-        "formato": "Etologia", 
-        "rating": "2", 
+    {
+        "id": "1.11",
+        "categoria": "adiestramiento",
+        "nombre": "Desire Mayo",
+        "formato": "Etologia",
+        "rating": "2",
         "precio": "6000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador11.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com"  
+        "email": "emailinventado@adiestramiento.com"
     },
-    { 
-        "id": "1.12", 
-        "categoria": "adiestramiento", 
-        "nombre": "Fran Huerta", 
-        "formato": "Domiciliario", 
-        "rating": "4", 
+    {
+        "id": "1.12",
+        "categoria": "adiestramiento",
+        "nombre": "Fran Huerta",
+        "formato": "Domiciliario",
+        "rating": "4",
         "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/adiestradores/adiestrador12.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@adiestramiento.com" 
+        "email": "emailinventado@adiestramiento.com"
     },
-    
-    { 
-        "id": "2.1", 
-        "categoria": "guarderia", 
-        "nombre": "Spa Pets", 
-        "formato": "Quinta", 
+    {
+        "id": "2.1",
+        "categoria": "guarderia",
+        "nombre": "Spa Pets",
+        "formato": "Quinta",
         "rating": "5",
-        "precio": "9000", 
+        "precio": "9000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia1.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.2", 
-        "categoria": "guarderia", 
-        "nombre": "Salvatore", 
-        "formato": "Casa", 
-        "rating": "3", 
+    {
+        "id": "2.2",
+        "categoria": "guarderia",
+        "nombre": "Salvatore",
+        "formato": "Casa",
+        "rating": "3",
         "precio": "3000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia2.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@guarderia.com" 
+        "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.3", 
-        "categoria": "guarderia", 
-        "nombre": "Dogos", 
-        "formato": "Casa-Quinta", 
-        "rating": "2", 
+    {
+        "id": "2.3",
+        "categoria": "guarderia",
+        "nombre": "Dogos",
+        "formato": "Casa-Quinta",
+        "rating": "2",
         "precio": "2000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia3.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@guarderia.com" 
+        "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.4", 
-        "categoria": "guarderia", 
-        "nombre": "Lujan", 
-        "formato": "Casa", 
-        "rating": "1", 
+    {
+        "id": "2.4",
+        "categoria": "guarderia",
+        "nombre": "Lujan",
+        "formato": "Casa",
+        "rating": "1",
         "precio": "10000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia4.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.5", 
-        "categoria": "guarderia", 
-        "nombre": "Recoleta", 
-        "formato": "Departamento", 
-        "rating": "5", 
+    {
+        "id": "2.5",
+        "categoria": "guarderia",
+        "nombre": "Recoleta",
+        "formato": "Departamento",
+        "rating": "5",
         "precio": "7000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia5.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.6", 
-        "categoria": "guarderia", 
-        "nombre": "Lorem", 
-        "formato": "Quinta", 
-        "rating": "3", 
+    {
+        "id": "2.6",
+        "categoria": "guarderia",
+        "nombre": "Lorem",
+        "formato": "Quinta",
+        "rating": "3",
         "precio": "10000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia6.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.7", 
-        "categoria": "guarderia", 
-        "nombre": "GuardiaPerritos", 
-        "formato": "Casa-Quinta", 
-        "rating": "2", 
+    {
+        "id": "2.7",
+        "categoria": "guarderia",
+        "nombre": "GuardiaPerritos",
+        "formato": "Casa-Quinta",
+        "rating": "2",
         "precio": "1000",
-        "imagen": "../multimedia/imagenes/individual/guarderias/guarderia7.webp" ,
+        "imagen": "../multimedia/imagenes/individual/guarderias/guarderia7.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.8", 
-        "categoria": "guarderia", 
-        "nombre": "PerroCuidado", 
-        "formato": "Quinta", 
-        "rating": "3", 
+    {
+        "id": "2.8",
+        "categoria": "guarderia",
+        "nombre": "PerroCuidado",
+        "formato": "Quinta",
+        "rating": "3",
         "precio": "5000",
-        "imagen": "../multimedia/imagenes/individual/guarderias/guarderia8.webp" ,
+        "imagen": "../multimedia/imagenes/individual/guarderias/guarderia8.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.9", 
-        "categoria": "guarderia", 
-        "nombre": "Perritario", 
-        "formato": "Casa-Quinta", 
-        "rating": "4", 
+    {
+        "id": "2.9",
+        "categoria": "guarderia",
+        "nombre": "Perritario",
+        "formato": "Casa-Quinta",
+        "rating": "4",
         "precio": "4000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia9.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@guarderia.com" 
+        "email": "emailinventado@guarderia.com"
     },
-    { 
-        "id": "2.10", 
-        "categoria": "guarderia", 
-        "nombre": "MiAmigoFiel", 
-        "formato": "Casa", 
-        "rating": "4", 
+    {
+        "id": "2.10",
+        "categoria": "guarderia",
+        "nombre": "MiAmigoFiel",
+        "formato": "Casa",
+        "rating": "4",
         "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/guarderias/guarderia10.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@guarderia.com" 
+        "email": "emailinventado@guarderia.com"
     },
-    
-    { 
-        "id": "3.1", 
-        "categoria": "paseos", 
-        "nombre": "Pedro Casas", 
-        "formato": "hora", 
-        "rating": "3", 
+    {
+        "id": "3.1",
+        "categoria": "paseos",
+        "nombre": "Pedro Casas",
+        "formato": "hora",
+        "rating": "3",
         "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/paseadores/paseador1.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@paseos.com" 
+        "email": "emailinventado@paseos.com"
     },
-    { 
-        "id": "3.2", 
-        "categoria": "paseos", 
-        "nombre": "Isabel Gallardo", 
-        "formato": "dia", 
-        "rating": "5", 
+    {
+        "id": "3.2",
+        "categoria": "paseos",
+        "nombre": "Isabel Gallardo",
+        "formato": "dia",
+        "rating": "5",
         "precio": "6000",
-        "imagen": "../multimedia/imagenes/individual/paseadores/paseador2.webp" ,
+        "imagen": "../multimedia/imagenes/individual/paseadores/paseador2.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@paseos.com"
     },
-    { 
-        "id": "3.3", 
-        "categoria": "paseos", 
-        "nombre": "Lorena Casares", 
-        "formato": "hora", 
-        "rating": "5", 
+    {
+        "id": "3.3",
+        "categoria": "paseos",
+        "nombre": "Lorena Casares",
+        "formato": "hora",
+        "rating": "5",
         "precio": "7000",
-        "imagen": "../multimedia/imagenes/individual/paseadores/paseador3.webp" ,
+        "imagen": "../multimedia/imagenes/individual/paseadores/paseador3.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@paseos.com"
     },
-    { 
+    {
         "id": "3.4",
-        "categoria": "paseos", 
-        "nombre": "Lucas Ornella", 
-        "formato": "hora", 
-        "rating": "2", 
+        "categoria": "paseos",
+        "nombre": "Lucas Ornella",
+        "formato": "hora",
+        "rating": "2",
         "precio": "8000",
         "imagen": "../multimedia/imagenes/individual/paseadores/paseador4.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@paseos.com" 
+        "email": "emailinventado@paseos.com"
     },
-    { 
-        "id": "3.5", 
-        "categoria": "paseos", 
-        "nombre": "Maria Gomez", 
-        "formato": "dia", 
-        "rating": "4", 
+    {
+        "id": "3.5",
+        "categoria": "paseos",
+        "nombre": "Maria Gomez",
+        "formato": "dia",
+        "rating": "4",
         "precio": "9000",
-        "imagen": "../multimedia/imagenes/individual/paseadores/paseador5.webp" ,
-        "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@paseos.com"    
-    },
-    { 
-        "id": "3.6", 
-        "categoria": "paseos", 
-        "nombre": "Gabriel Olleros", 
-        "formato": "dia", 
-        "rating": "2", 
-        "precio": "10000",
-        "imagen": "../multimedia/imagenes/individual/paseadores/paseador6.webp" ,
+        "imagen": "../multimedia/imagenes/individual/paseadores/paseador5.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@paseos.com"
     },
-    { 
-        "id": "4.1", 
-        "categoria": "veterinarias", 
-        "nombre": "R&B", 
-        "formato": "Emergenicias - Comercial", 
-        "rating": "3", 
+    {
+        "id": "3.6",
+        "categoria": "paseos",
+        "nombre": "Gabriel Olleros",
+        "formato": "dia",
+        "rating": "2",
+        "precio": "10000",
+        "imagen": "../multimedia/imagenes/individual/paseadores/paseador6.webp",
+        "telefono": "+54 9 11 2345 7890",
+        "email": "emailinventado@paseos.com"
+    },
+    {
+        "id": "4.1",
+        "categoria": "veterinarias",
+        "nombre": "R&B",
+        "formato": "Emergenicias - Comercial",
+        "rating": "3",
         "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/vetes/vete1.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com"    
+        "email": "emailinventado@veterinarias.com"
     },
-    { 
-        "id": "4.2", 
-        "categoria": "veterinarias", 
-        "nombre": "Artemisa", 
-        "formato": "Emergenicias - Comercial", 
-        "rating": "3", 
-        "precio": "9000",
-        "imagen": "../multimedia/imagenes/individual/vetes/vete2.webp" ,
-        "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com"    
-    },
-    { 
-        "id": "4.3", 
-        "categoria": "veterinarias", 
-        "nombre": "Libertador", 
+    {
+        "id": "4.2",
+        "categoria": "veterinarias",
+        "nombre": "Artemisa",
         "formato": "Emergenicias - Comercial",
-        "rating": "5", 
+        "rating": "3",
+        "precio": "9000",
+        "imagen": "../multimedia/imagenes/individual/vetes/vete2.webp",
+        "telefono": "+54 9 11 2345 7890",
+        "email": "emailinventado@veterinarias.com"
+    },
+    {
+        "id": "4.3",
+        "categoria": "veterinarias",
+        "nombre": "Libertador",
+        "formato": "Emergenicias - Comercial",
+        "rating": "5",
         "precio": "5000",
         "imagen": "../multimedia/imagenes/individual/vetes/vete3.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com"    
+        "email": "emailinventado@veterinarias.com"
     },
-    { 
-        "id": "4.4", 
-        "categoria": "veterinarias", 
-        "nombre": "AnimalCare", 
-        "formato": "Emergenicias - Comercial", 
-        "rating": "2", 
+    {
+        "id": "4.4",
+        "categoria": "veterinarias",
+        "nombre": "AnimalCare",
+        "formato": "Emergenicias - Comercial",
+        "rating": "2",
         "precio": "8000",
         "imagen": "../multimedia/imagenes/individual/vetes/vete4.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com"    
+        "email": "emailinventado@veterinarias.com"
     },
-    { 
-        "id": "4.5", 
-        "categoria": "veterinarias", 
-        "nombre": "Whippet", 
-        "formato": "Emergenicias - Comercial", 
-        "rating": "3", 
+    {
+        "id": "4.5",
+        "categoria": "veterinarias",
+        "nombre": "Whippet",
+        "formato": "Emergenicias - Comercial",
+        "rating": "3",
         "precio": "6000",
-        "imagen": "../multimedia/imagenes/individual/vetes/vete5.webp" ,
+        "imagen": "../multimedia/imagenes/individual/vetes/vete5.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com"    
+        "email": "emailinventado@veterinarias.com"
     },
-    { 
-        "id": "4.6", 
-        "categoria": "veterinarias", 
-        "nombre": "WonderPet", 
-        "formato": "Emergenicias - Comercial", 
-        "rating": "5", 
+    {
+        "id": "4.6",
+        "categoria": "veterinarias",
+        "nombre": "WonderPet",
+        "formato": "Emergenicias - Comercial",
+        "rating": "5",
         "precio": "2000",
         "imagen": "../multimedia/imagenes/individual/vetes/vete6.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@veterinarias.com" 
+        "email": "emailinventado@veterinarias.com"
     },
-    
-    { 
-        "id": "5.1", 
-        "categoria": "traslados", 
-        "nombre": "BoardingPet", 
-        "formato": "Internacional - Nacional", 
-        "rating": "3", 
+    {
+        "id": "5.1",
+        "categoria": "traslados",
+        "nombre": "BoardingPet",
+        "formato": "Internacional - Nacional",
+        "rating": "3",
         "precio": "4000",
-        "imagen": "../multimedia/imagenes/individual/traslados/traslado1.webp" ,
+        "imagen": "../multimedia/imagenes/individual/traslados/traslado1.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
     },
-    { 
-        "id": "5.2", 
-        "categoria": "traslados", 
-        "nombre": "Mascotax", 
-        "formato": "Nacional", 
-        "rating": "3", 
+    {
+        "id": "5.2",
+        "categoria": "traslados",
+        "nombre": "Mascotax",
+        "formato": "Nacional",
+        "rating": "3",
         "precio": "6000",
-        "imagen": "../multimedia/imagenes/individual/traslados/traslado2.webp" ,
+        "imagen": "../multimedia/imagenes/individual/traslados/traslado2.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
     },
-    { 
-        "id": "5.3", 
-        "categoria": "traslados", 
-        "nombre": "Argentina PetCargo", 
-        "formato": "Internacional - Nacional", 
-        "rating": "5", 
+    {
+        "id": "5.3",
+        "categoria": "traslados",
+        "nombre": "Argentina PetCargo",
+        "formato": "Internacional - Nacional",
+        "rating": "5",
         "precio": "9000",
-        "imagen": "../multimedia/imagenes/individual/traslados/traslado3.webp" ,
+        "imagen": "../multimedia/imagenes/individual/traslados/traslado3.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
     },
-    { 
-        "id": "5.4", 
-        "categoria": "traslados", 
-        "nombre": "Traslados Iron", 
-        "formato": "Internacional", 
-        "rating": "2", 
+    {
+        "id": "5.4",
+        "categoria": "traslados",
+        "nombre": "Traslados Iron",
+        "formato": "Internacional",
+        "rating": "2",
         "precio": "5000",
-        "imagen": "../multimedia/imagenes/individual/traslados/traslado4.webp" ,
+        "imagen": "../multimedia/imagenes/individual/traslados/traslado4.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
     },
-    { 
-        "id": "5.5", 
-        "categoria": "traslados", 
-        "nombre": "PetsVan", 
-        "formato": "Nacional", 
-        "rating": "4", 
+    {
+        "id": "5.5",
+        "categoria": "traslados",
+        "nombre": "PetsVan",
+        "formato": "Nacional",
+        "rating": "4",
         "precio": "3000",
         "imagen": "../multimedia/imagenes/individual/traslados/traslado5.webp",
         "telefono": "+54 9 11 2345 7890",
-        "email": "emailinventado@traslados.com" 
+        "email": "emailinventado@traslados.com"
     },
-    { 
-        "id": "5.6", 
-        "categoria": "traslados", 
-        "nombre": "Lean Pets", 
-        "formato": "Internacional - Nacional", 
-        "rating": "5", 
+    {
+        "id": "5.6",
+        "categoria": "traslados",
+        "nombre": "Lean Pets",
+        "formato": "Internacional - Nacional",
+        "rating": "5",
         "precio": "6000",
-        "imagen": "../multimedia/imagenes/individual/traslados/traslado6.webp" ,
+        "imagen": "../multimedia/imagenes/individual/traslados/traslado6.webp",
         "telefono": "+54 9 11 2345 7890",
         "email": "emailinventado@traslados.com"
     }
-    
-    
-          
-  ]
-
-
- 
+]

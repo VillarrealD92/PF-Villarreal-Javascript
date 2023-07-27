@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Crear los elementos del formulario
   const usernameInput = $('<input type="text" placeholder="Usuario" name="username" autocomplete="null">')
   const passwordInput = $('<input type="password" placeholder="Contraseña" name="password" autocomplete="null" >')
@@ -14,7 +14,7 @@ $(document).ready(function() {
   if (loggedInUser) {
     mostrarBienvenida(loggedInUser)
   } else {
-    $('.signinButton').on('click', function() {
+    $('.signinButton').on('click', function () {
       formContainer.insertAfter('.signinButton')
     })
   }
@@ -34,14 +34,14 @@ $(document).ready(function() {
     const errorMessage = $('<p>Inténtalo de nuevo, no pudimos encontrar ese usuario/contraseña</p>')
     formContainer.append(errorMessage)
 
-    setTimeout(function() {
+    setTimeout(function () {
       errorMessage.remove()
     }, 500)
   }
 
   // Evento de clic en el botón de inicio de sesión
-  submitButton.on('click', function(event) {
-    event.preventDefault() 
+  submitButton.on('click', function (event) {
+    event.preventDefault()
 
     const username = usernameInput.val()
     const password = passwordInput.val()
@@ -51,7 +51,7 @@ $(document).ready(function() {
   })
 
   // Evento de presionar Enter en el formulario
-  formContainer.on('keyup', function(event) {
+  formContainer.on('keyup', function (event) {
     if (event.keyCode === 13) {
       event.preventDefault()
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
   })
 
   // Evento de clic en el botón de cerrar sesión
-  logoutButton.on('click', function() {
+  logoutButton.on('click', function () {
     Swal.fire({
       title: '¿Estás seguro?',
       text: 'Se cerrará la sesión actual',
@@ -95,12 +95,12 @@ $(document).ready(function() {
 
   // Función para validar los datos ingresados
   function validarDatos(username, password) {
-    
+
     $.getJSON('../signin.json')
-      .then(function(data) {
+      .then(function (data) {
         // Verificar si existe una coincidencia de usuario y contraseña
         const usuarioValido = data.find(user => user.username === username && user.password === password)
-  
+
         if (usuarioValido) {
           mostrarBienvenida(username)
           localStorage.setItem('loggedInUser', username)
@@ -108,7 +108,7 @@ $(document).ready(function() {
           mostrarError()
         }
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log('Error al cargar el archivo JSON:', error)
       })
   }
